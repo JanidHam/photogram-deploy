@@ -1,0 +1,20 @@
+---
+- hosts: photogram_*
+  pre_tasks:
+    - name: Update apt repository
+      apt: update_cache=yes
+  roles:
+    - photogram
+  vars:
+    - projects:
+      - photogram-db
+      - photogram-client
+      - photogram-api
+      - photogram-ws
+      - photogram
+    - services:
+      - photogram-api-pictures
+      - photogram-api-users
+      - photogram-api-auth
+      - photogram-ws
+      - photogram

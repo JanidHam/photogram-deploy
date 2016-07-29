@@ -1,0 +1,30 @@
+{
+  "name": "photogram-ws",
+  "version": "1.0.0",
+  "description": "Photogram Realtime Backend",
+  "main": "server.js",
+  "scripts": {
+    "lint": "standard"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/janidham/photogram-ws.git"
+  },
+  "author": "Janid Ham <janid_ham@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/janidham/photogram-ws/issues"
+  },
+  "homepage": "https://github.com/janidham/photogram-ws#readme",
+  "devDependencies": {
+    "babel-eslint": "^6.1.2",
+    "standard": "^7.1.2"
+  },
+  "dependencies": {
+    "rethinkdb": "^2.3.2",
+    "socket.io": "^1.4.8"
+  }
+}
